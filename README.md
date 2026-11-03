@@ -1,70 +1,164 @@
-# Healveda
+# Healveda 🌿☕
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> **Healveda** is an artisanal wellness and heritage tea brand platform crafted to celebrate the timeless rituals, stories, and regional flavors of Indian chai. From the bustling lanes of Charminar to the misty hills of Idukki and the sacred ghats of Varanasi, Healveda blends ancient wellness with mindful modern lifestyle.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📖 Table of Contents
 
-### `npm start`
+- [About The Project](#about-the-project)
+- [Key Features](#key-features)
+- [Signature Collection](#signature-collection)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the App](#running-the-app)
+  - [Building for Production](#building-for-production)
+- [Scripts](#scripts)
+- [Typography & Styling](#typography--styling)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🌿 About The Project
 
-### `npm test`
+Healveda is a React web application designed with an earthy, warm aesthetic that evokes heritage, warmth, and slow living. It serves as an interactive catalog and storytelling platform for regional wellness chai blends, guiding visitors through:
+- The philosophy behind ancient Ayurvedic herbs and whole spices.
+- Authentic tales that link each blend to its cultural landscape.
+- Ritualistic brewing and wellness insights.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ✨ Key Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Interactive Hero & Brand Storytelling**: Engaging hero section highlighting the soul and origins of Healveda.
+- **Stacked Cards Ritual Carousel**: Smooth gesture/touch and click-driven stacked card gallery to explore signature daily chai rituals.
+- **Regional Product Showcase**: Beautifully presented blends featuring origin stories, taste notes, and mood profiles.
+- **Journal & Blog**: Informative wellness guides, mindfulness articles, and deep dives with dedicated blog item pages (`/blog/:id`).
+- **Contact & Inquiries**: Easy-to-use contact form for inquiries, collaborations, and community interactions.
+- **Responsive & Elegant Design**: Styled with custom editorial typography (*The Seasons*), warm natural palettes, and seamless mobile responsiveness.
+- **Smooth Page Transitions**: Automatic scroll-to-top routing with React Router.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🍵 Signature Collection
 
-### `npm run eject`
+| Blend | Regional Heritage | Profile |
+| :--- | :--- | :--- |
+| **Deccan Cinnamon Dum Chai** | *Hyderabad* | Slow-brewed warmth with rich cinnamon, inspired by quiet corners near Charminar. |
+| **Idukki Valley Cardamom Chai** | *Idukki, Kerala* | Fresh, aromatic green cardamom from misty mountain valleys. |
+| **India's Herbal Chai** | *Varanasi* | Pure Ayurvedic herbs and botanicals inspired by timeless ghats. |
+| **Desi Masala Chai** | *Delhi* | Bold, aromatic whole spices celebrating the vibrant heritage of old cities. |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠 Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Frontend Framework**: [React 19](https://react.dev/)
+- **Routing**: [React Router v7](https://reactrouter.com/)
+- **Icons**: [React Icons](https://react-icons.github.io/react-icons/)
+- **Styling**: Vanilla CSS with custom design tokens, responsive flexbox & grid
+- **Typography**: *The Seasons* (Custom luxury serif font family)
+- **Tooling**: Create React App / `react-scripts`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📁 Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```text
+healveda/
+├── public/                 # Static assets, icons, HTML template
+│   ├── favIcon.svg
+│   ├── logoHeader.svg
+│   └── index.html
+├── src/
+│   ├── assests/            # Images, branding icons, and font files
+│   │   ├── fonts/          # The Seasons font family & font-face declarations
+│   │   └── ...
+│   ├── components/         # Modular React components
+│   │   ├── Blog/           # Journal/Blog listing page
+│   │   ├── BlogItem/       # Individual blog post article view
+│   │   ├── Contact/        # Contact form & social connections
+│   │   ├── Footer/         # Brand footer with navigation & links
+│   │   ├── Home/           # Landing page with hero & story sections
+│   │   ├── Navbar/         # Header navigation bar
+│   │   ├── Products/       # Product catalog & details
+│   │   ├── ScrollToTop.js  # Route change scroll reset handler
+│   │   └── StackedCardsSection/ # Interactive stacked card slider
+│   ├── App.css             # Root application styles
+│   ├── App.js              # Route configuration & page wrapper
+│   ├── index.css           # Global typography & base styles
+│   └── index.js            # React root mount
+├── package.json            # Project dependencies and npm scripts
+└── README.md               # Project documentation
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🚀 Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Follow these steps to run the project locally on your machine.
 
-### Analyzing the Bundle Size
+### Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Ensure you have **Node.js** (v16 or higher recommended) and **npm** installed:
+```bash
+node -v
+npm -v
+```
 
-### Making a Progressive Web App
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/seshu362/Healveda.git
+   cd Healveda
+   ```
 
-### Advanced Configuration
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Running the App
 
-### Deployment
+Start the development server:
+```bash
+npm start
+```
+The application will open automatically at [http://localhost:3000](http://localhost:3000).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Building for Production
 
-### `npm run build` fails to minify
+To create an optimized production build:
+```bash
+npm run build
+```
+The bundled files will be generated in the `build/` directory, ready for deployment on platforms like Vercel, Netlify, or GitHub Pages.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 📜 Available Scripts
+
+| Command | Description |
+| :--- | :--- |
+| `npm start` | Runs the app in development mode with hot reloading. |
+| `npm run build` | Builds the static production package into `build/`. |
+| `npm test` | Launches the test runner in interactive watch mode. |
+| `npm run eject` | Ejects from Create React App (irreversible). |
+
+---
+
+## 🎨 Typography & Styling
+
+The project features a tailored editorial feel utilizing:
+- **Font Family**: *The Seasons* (Light, Regular, Bold, and Italic variants stored in `src/assests/fonts/`).
+- **Color Palette**: Warm terracotta, earthy olive, soothing cream, and deep herbal browns reflecting natural spices and Ayurvedic herbs.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - feel free to use and adapt it for personal or commercial projects.
