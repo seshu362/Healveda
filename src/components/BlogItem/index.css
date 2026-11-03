@@ -1,0 +1,106 @@
+
+.blog-item-container {
+  min-height: 100vh;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 0 80px;
+  
+}
+
+
+
+.blog-item-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 28px;
+  position: relative;
+  
+}
+
+.blog-item-title {
+  color: #6C1129;
+  text-align: center;
+  font-family: "The Seasons";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 28px;
+  
+}
+
+.blog-item-image-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 28px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.blog-item-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.blog-item-text {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 0;
+}
+
+.blog-item-text p {
+  color: var(--241-f-19, #241F19);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.blog-item-text p:last-child {
+  margin-bottom: 0;
+}
+
+.back-to-blogs-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 40px;
+  background: #6E112A;
+  color: #FFF;
+text-align: center;
+font-family: "The Seasons";
+font-size: 21px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-to-blogs-btn:hover {
+  background-color: #8B4513;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .blog-item-title {
+    font-size: 1.75rem;
+  }
+
+  .blog-item-text p {
+    font-size: 0.95rem;
+  }
+}
+

@@ -1,0 +1,200 @@
+/* src/components/Navbar/index.css */
+.nav-root {
+  position: sticky;
+  top: 0;
+  z-index: 2000; /* ensure navbar stays above stacked cards/images */
+  background: #6E112A;
+  height: 100px;
+  padding-top: 10px;
+}
+
+.nav-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Simple logo styling */
+.logo {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+.nav {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+.nav-link {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  padding: 6px 2px;
+  color: #FFFFFF; /* Inactive color - white */
+  text-align: right;
+  font-family: "The Seasons";
+  text-decoration: none;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.nav-link.active {
+  color: #E8C863; /* Active color - golden */
+  text-align: right;
+  font-family: "The Seasons";
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.menu {
+  display: none;
+  background: transparent;
+  border: 0;
+  padding: 5px;
+  cursor: pointer;
+  color: #FFFFFF; /* White color for menu icons */
+}
+
+.menu svg {
+  color: #FFFFFF; /* Ensure icons are white */
+}
+
+.menu img {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+/* Mobile styles - improved for better display and alignment */
+@media (max-width: 860px) {
+  .menu { 
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Lighter background for white icon */
+    border-radius: 4px;
+    margin-left: auto;
+    color: #FFFFFF; /* White color for menu icons */
+  }
+
+  .menu svg {
+    color: #FFFFFF; /* Ensure icons stay white */
+  }
+  
+  .menu img {
+    width: 24px;
+    height: 24px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .nav {
+    position: absolute;
+    top: 72px;
+    right: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    background: #FFF4EB;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #edd9cd;
+    padding: 15px 16px;
+    gap: 0;
+    z-index: 2001;
+  }
+  
+  .nav.open { 
+    display: flex; 
+  }
+  
+  .nav-link {
+    text-align: left;
+    width: 100%;
+    padding: 16px 10px;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(110, 17, 42, 0.1);
+    transition: background-color 0.2s ease, color 0.3s ease;
+    color: #000000; /* Black color for inactive nav items in mobile */
+  }
+  
+  .nav-link:last-child {
+    border-bottom: none;
+  }
+  
+  .nav-link:hover {
+    background-color: rgba(110, 17, 42, 0.05);
+  }
+  
+  .nav-link.active {
+    color: #6E112A; /* Active color in mobile - just color change, no movement */
+    font-weight: 500;
+    text-align: left;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+  .brand {
+    gap: 8px;
+  }
+  
+  .logo {
+    height: 36px;
+  }
+  
+  .nav-wrap {
+    padding: 0 12px;
+    height: 64px;
+  }
+  
+  .nav {
+    top: 64px;
+  }
+  
+  .menu {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    color: #FFFFFF; /* White color for menu icons */
+  }
+
+  .menu svg {
+    color: #FFFFFF; /* Ensure icons stay white */
+  }
+  
+  .nav-link {
+    font-size: 17px;
+    padding: 14px 10px;
+  }
+}
+
+@media (max-width: 860px) {
+  .nav-root {
+    height: 80px;
+  }
+}

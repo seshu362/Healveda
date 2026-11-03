@@ -1,0 +1,136 @@
+.blog-container {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blog-hero {
+  width: 100%;
+  height: 250px; /* Match the image height */
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-title {
+  color: #6C1129;
+text-align: center;
+  font-family: "The Seasons";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 24px 0 0;
+
+}
+
+.blog-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  
+  
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.blog-card {
+  background-color:  #FFCA8A;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.blog-card-title {
+  margin: 0;
+  color: #2E403A;
+  font-family: "The Seasons";
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 60px;
+}
+
+.page-number {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #8B4513;
+  background-color: transparent;
+  color: #6B3E26;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  font-family: 'Cinzel', serif;
+}
+
+.page-number:hover {
+  background-color: #6B3E26;
+  color: #fff;
+}
+
+.page-number.active {
+  background-color: #6B3E26;
+  color: #fff;
+}
+
+.page-dots {
+  color: #6B3E26;
+  font-size: 1.2rem;
+  padding: 0 5px;
+}
+
+@media (max-width: 968px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 568px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .hero-title {
+    font-size: 1.75rem;
+  }
+}

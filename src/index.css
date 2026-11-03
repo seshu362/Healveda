@@ -6,8 +6,45 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+/* src/index.css */
+* {
+  scroll-behavior: auto !important;
+}
+
+html {
+  scroll-behavior: auto !important;
+}
+
+body {
+  scroll-behavior: auto !important;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  scroll-behavior: auto !important;
+}
+
+
+/* Add these styles to prevent scroll preservation */
+html {
+  scroll-behavior: auto !important;
+}
+
+html, body, #root {
+  min-height: 100vh;
+}
+
+.font-1{font-family: "Poppins", sans-serif !important;} .size-1{}
+
+html, body {
+  overflow-x: hidden;
 }
